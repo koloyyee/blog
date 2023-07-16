@@ -1,14 +1,15 @@
 ---
+import mugshot from '../../components/img/mugshot.png'
 import BaseLayout from '../../layouts/Base-Layout.astro'
 ---
 
 <BaseLayout title="about">
     <section class="flex items-center gap-4">
-        <h1>Hi! my name is David Ko</h1>
+        <h1 class="dark:text-amber-400">Hi! my name is David Ko</h1>
 
         <img
             class="max-w-12 max-h-48 rounded-full"
-            src="../../../public/mugshot.png"
+            src={mugshot}
             alt="The rofile picture of David Ko"
         />
     </section>

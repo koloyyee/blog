@@ -1,0 +1,38 @@
+---
+import PostLink from '../../components/Post-Link.astro'
+import BaseLayout from '../../layouts/Base-Layout.astro'
+
+export async function getStaticPaths() {
+    const allPosts = await Astro.glob('../../pages/posts/*/*.md')
+    const tags = [
+        ...new Set(allPosts.map((post) => post.frontmatter?.tags).flat()),
+    ]
+
+    console.log(allPosts)
+
+    return tags.map((tag) => {
+        const filteredPosts = allPosts.filter((post) => {
+            return post.frontmatter.tags.includes(tag)
+        })
+        return {
+            params: { tag },
+            props: { posts: filteredPosts },
+        }
+    })
+}
+const { tag } = Astro.params
+const { posts } = Astro.props
+---
+
+<BaseLayout title={`Tag: ${tag}`}>
+    Posts tagged with {tag}
+    {
+        posts.map((post) => (
+            <PostLink
+                url={post.url}
+                title={post.frontmatter.title}
+                description={post.frontmatter.description}
+            />
+        ))
+    }
+</BaseLayout>
