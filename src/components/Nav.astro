@@ -1,0 +1,16 @@
+---
+const routes = [
+    { name: 'blog', link: '/' },
+    { name: 'about', link: '/about/' },
+]
+---
+
+<ul class="nav-links">
+    {
+        routes.map((route) => (
+            <a href={route.link}>
+                <li> {route.name}</li>{' '}
+            </a>
+        ))
+    }
+</ul>

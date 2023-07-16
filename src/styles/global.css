@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+        @apply my-4;
+    }
+
+    h2 {
+        @apply text-xl;
+        @apply my-4;
+    }
+
+    h3 {
+        @apply text-lg;
+        @apply my-4;
+    }
+
+    a {
+        @apply text-blue-600;
+    }
+}
+
+
+:root {
+    --primary: #0d0a42;
+    --accent: #ebc11a;
+    --background: #f1f5f9;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: var(--background);
+    font-family: 'Merriweather', serif;
+    line-height: 1.5rem;
+    color: var(--primary)
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+html.dark {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+}
+
+h1 {
+    font-style: italic;
+}
+
+a,
+li {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+/* class="flex justify-end gap-5 w-full shadow-md dark:shadow-gray-600 p-4 rounded-lg sticky top-auto nav" */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transition: all ease-in-out 300ms;
+
+}
+
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    color: #0d0a42;
+    padding: 0.8rem;
+}
+
+
+.nav-links {
+    display: none;
+    list-style-type: none;
+
+}
+
+.nav-links a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.expanded {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    transform: translate(-1rem);
+}
+
+@media screen and (min-width: 636px) {
+    header {
+        display: flex;
+        gap: 2rem;
+        position: sticky;
+        top: 0;
+        padding-top: 1rem;
+        flex: end;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+}

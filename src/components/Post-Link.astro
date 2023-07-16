@@ -1,0 +1,16 @@
+---
+const { url, title, description } = Astro.props
+---
+
+<a href={url}>
+    <div
+        class="shadow-sm my-5 border-2 border-spacing-2 border-gray-100 p-2 filter-none transition ease-in-out delay-150 hover:-translate-y-1 hover:-translate-x-1 rounded-md hover:shadow-primary-100 dark:hover:shadow-amber-400 dark:hover:shadow-md"
+    >
+        <h3 class="dark:text-amber-300 text-blue-950 font-bold">{title}</h3>
+        <p class="description text-primary-100 dark:text-white">
+            {description}
+        </p>
+    </div>
+</a>
+
+<style></style>
