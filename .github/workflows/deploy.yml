@@ -17,8 +17,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    matrix:
-      node-version: [16]
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
