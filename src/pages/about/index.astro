@@ -3,7 +3,16 @@ import BaseLayout from '../../layouts/Base-Layout.astro'
 ---
 
 <BaseLayout title="about">
-    <h1>Hi! my name is David Ko</h1>
+    <section class="flex items-center gap-4">
+        <h1>Hi! my name is David Ko</h1>
+
+        <img
+            class="max-w-12 max-h-48 rounded-full"
+            src="../../../public/mugshot.png"
+            alt="The rofile picture of David Ko"
+        />
+    </section>
+
     <p>I am a chef turned software developer works with Javascript</p>
     <p>I am also a big fan of Svelte, Swift, and SwiftUI</p>
 
