@@ -65,6 +65,9 @@ const AttendanceStatus = {
     attendanceRate = atts?.length > 0 ? atts.reduce((acc, curr) => acc + curr) / atts.length : null
 ```
 
+<br>
+<br>
 and this moment I looked at my mine vs his, he just made it so much cleaner and much easier to read, and he also explains to me imperative vs declarative. I learnt something very useful on Thursday.
-
+<br>
+<br>
 Programming is so much fun.
