@@ -5,8 +5,6 @@ import BaseLayout from '../layouts/Base-Layout.astro'
 import '../styles/global.css'
 
 const allPosts = await Astro.glob('../pages/posts/*/*.md')
-console.log(allPosts[0].frontmatter)
-
 const sortedPosts = allPosts.sort(
 	(a, b) =>
 		Date.parse(b.frontmatter.publishedAt) -
