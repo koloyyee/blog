@@ -4,7 +4,7 @@ layout: ../../../layouts/Markdown-Post-Layout.astro
 title: "The Joy of Realtime Updates."
 publishedAt: 2023-Oct-28
 description: "Network Programming & WebSocket are magical!"
-tags: ["blogging"]
+tags: ["thoughts"]
 
 ---
 
