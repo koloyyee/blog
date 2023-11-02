@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/Markdown-Post-Layout.astro
 title: "First Programming Language To Learn."
-publishedAt: 2023-Nov-02
+publishedAt: 2023-Nov-2
 description: "It is not the matter of which."
 tags: ["blogging", "java", "fundamentals", "concepts"]
 ---
