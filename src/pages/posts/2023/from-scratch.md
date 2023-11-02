@@ -3,7 +3,7 @@ layout: ../../../layouts/Markdown-Post-Layout.astro
 title: "Learn From Scratch!"
 publishedAt: 2023-Sept-14
 description: "Learning programming in boring yet proper way."
-tags: ["blogging", "java", "sql", "fundamentals", "concepts"]
+tags: ["java", "sql", "fundamentals", "concepts"]
 ---
 
 # Back to School!

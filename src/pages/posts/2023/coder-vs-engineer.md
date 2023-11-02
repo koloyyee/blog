@@ -3,7 +3,7 @@ layout: ../../../layouts/Markdown-Post-Layout.astro
 title: "Coder vs Software Engineer."
 description: "Don't be a coding monkey."
 publishedAt : 2023-10-25
-tags: ["blog", "thoughts"]
+tags: [ "thoughts"]
 ---
 
 # Coder and Software Engineer

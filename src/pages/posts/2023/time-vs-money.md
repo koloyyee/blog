@@ -3,7 +3,7 @@ layout: ../../../layouts/Markdown-Post-Layout.astro
 title: "Time vs Money"
 description: "Time matters the most."
 publishedAt : 2023-08-18
-tags: ["life", "work", "money"]
+tags: ["thoughts"]
 ---
 
 # Do you value your time?

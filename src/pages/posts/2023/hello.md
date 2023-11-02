@@ -4,7 +4,7 @@ layout: ../../../layouts/Markdown-Post-Layout.astro
 title: "Hello!"
 publishedAt: 2023-Jul-15
 description: "Let the journey begin"
-tags: ["blogging"]
+tags: ["thoughts"]
 
 ---
 
