@@ -14,9 +14,12 @@ The age-old question is, which language should I first learn? The question is wh
 
 I was talking to a CS student from Carleton University in Ottawa, Canada since I am attending a College I wish to know more about their curriculums, and he told me they start with Python as an intro to programming, one of the easiest languages to see the results and soon after they will be doing Java for OOP (Object Oriented Programming), and then C and C++ for system and also doing Haskell to learn about functional programming paradigm. My take is learning Python for dipping the toe into the world of programming to learn about the basics but the real understanding of how computer programming works will be Java.
 
+
 Why Java? a lot of people hate Java because it is verbose and explicit, it is typed so it will be annoying to new programmers but this annoyance and verbose give programmers a good entry of what programming is about by compiling, understanding types, what garbage collector is, what is heap and stack memory, data structures and algorithm, NullPointerException and most importantly how not to overcomplicate like in Java. 
 
+
 After that, it is time for C and C++ because as a programmer we need to learn about true memory management and look at the steps; my experience after doing an intro to C with CS50 by Stanford made me understand what memory address, pointers which makes pass by value and pass by reference makes lots of sense.
+
 
 After OOP, and PP it is time for FP (functional programming), Haskell is a purely FP language that allows programming to see the world through a different lens. I don't know pure FP but only JavaScript style FP but you see? JavaScript is a good entry for doing everything (not great but okay)!
 
