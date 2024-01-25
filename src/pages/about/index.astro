@@ -1,23 +1,66 @@
 ---
-import mugshot from '../../components/img/mugshot.png'
-import BaseLayout from '../../layouts/Base-Layout.astro'
+import mugshot from "../../components/img/mugshot.png";
+import BaseLayout from "../../layouts/Base-Layout.astro";
 ---
 
 <BaseLayout title="about">
-    <section class="flex items-center gap-4">
-        <h1 class="dark:text-amber-400">Hi! my name is David Ko</h1>
+  <section class="flex items-center gap-10 justify-end">
+    <h2 class="dark:text-amber-400 text-4xl">Hey!👋</h2>
+    <img
+      class="max-w-12 max-h-48 rounded-full"
+      src={mugshot}
+      alt="The rofile picture of David Ko"
+    />
+  </section>
 
-        <img
-            class="max-w-12 max-h-48 rounded-full"
-            src={mugshot}
-            alt="The rofile picture of David Ko"
-        />
-    </section>
+  <article class="mb-5">
+    <h1 class="text-3xl dark:text-amber-400">What is the blog about?</h1>
+    This blog is about my journey in programming, the mistakes I made, and the things
+    I have learned. Lessons I have learnt can be a subject at the college I am attending,
+    a course on Coursera, or any lesson I came across during my dev time.
 
-    <p>I am a chef turned software developer works with Javascript</p>
-    <p>I am also a big fan of Svelte, Swift, and SwiftUI</p>
+    <h3 class="text-2xl dark:text-amber-400">About me.</h3>
+    <p>
+      A little bit about myself, my name is <strong>Loyyee Ko</strong> or you can
+      call me <strong>David</strong>,
+    </p>
+    <p>
+      I started my journey in 2016 but nothing serious, just started to try out
+      HTML, CSS, and JS.
+    </p>
+    <p>
+      Back then I was still a chef, after surgery, I knew that one day I would
+      leave the food and beverage industry,
+    </p>
+    <p>
+      and programming is equally fun and frustrating as cooking because I can
+      make all sorts of products.
+    </p>
+
+    <br />
+    <p>
+      Between now and then, I learned half a dozen languages, a number of
+      frameworks, and even attended a coding boot camp, but none of that effort
+      got me a programmer role until I finally said "no more other languages" I
+      believe to go deeper into the world of JavaScript and TypeScript.
+    </p>
+    <br />
+    <p>
+      It paid off, I landed my job as a frontend developer in Hong Kong and I
+      learnt a lot by just working by myself and reading other's work. 8 months
+      later, I found myself here in Ottawa, Canada, finally the leap to attend a
+      proper college to learn programming, I am glad I made the decision and
+      begin my journey with Java, and I finally took the time to learn all the
+      programming basics again.
+    </p>
+    <br />
+    <p>
+      This is my journey in the world of programming, I do not fear of A.I, I
+      fear my Shinny Object Syndrome that leads me nowhere but in the same spot.
+    </p>
 
     <a href="https://www.loyyee.co" target="_blank">
-        You can also visit my website</a
+      You can also visit my website</a
     >
+  </article>
 </BaseLayout>
