@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Markdown-Post-Layout.astro
-title: "Stepping into the world Algorithm."
+title: "Stepping into the world the Algorithm."
 description: "The first week of Princeton DSA course."
 publishedAt : 2024-01-19
 tags: ["algorithm", "princeton", "java"]
@@ -11,7 +11,7 @@ tags: ["algorithm", "princeton", "java"]
 ## New Journey
 After finishing my course on MOOC.fi with Java, I believe it is time for me to face my greatest fears and the mountain I want to climb, Data Structures & Algorithms (DSA). With the help of the internet, I have finally decided to do the Coursera Princeton DSA course, and in week 1 I already got hammered.
 
-First, it is how to include the package alg4s.jar, with me having little to no experience in Java package management, I had to learn how to the jar to the module in IntelliJ, and it took me 1 hour to figure it out. 
+First, it is how to include the package alg4s.jar, with me having little to no experience in Java package management, I had to learn how to put the jar to the module in IntelliJ, and it took me 1 hour to figure it out. 
 
 ## Read the Whole Question!
 Then my second weak point, reading the questions, there were 3 tasks to do for our first task, HelloWorld.java, HelloGoodbye.java, and RandomWord.java, surprisingly I failed to pass in the first run! Wait what? It should be easy, no? That’s right, it is easy if you have read the question, this is important throughout this whole week.
