@@ -102,17 +102,8 @@ We can declare an Environment Variable with `export ANY_ENV_VAR_NAME=VAR_VALUE` 
 
 ### Spring boot
 #### Setting
-1. optional in the `application.properties` file, first we'll need to set up a `secret.properties` which WILL NOT be pushed to Github but to set up directly in the production environment.
-   I personally am not family with it so for more details please watch [Dan Vega&#39;s Tutorial](https://youtu.be/PmGLn3ua_lU?feature=shared)
-
-```java
-# .properties
-secret.api-key=optional.secret-key
-
-```
-
-2. If your deployment site is about to be set up directly you can do it there
-3. The same as mentioned, we can set up in the `~/.bashrc`, from here we can do this with our `application.properties` or `application.yml` file
+1. If your deployment site is about to be set up directly you can do it there
+2. The same as mentioned, we can set up in the `~/.bashrc`, from here we can do this with our `application.properties` or `application.yml` file
 
 #### Getting
 ```yml
@@ -131,7 +122,27 @@ secret:
 System.getenv("ANY_ENV_VAR_NAME")
 ```
 
+#### "Optional" way
+
+3. As mentioned in the video optional in the `application.properties` file, first we'll need to set up a `secret.properties` which WILL NOT be pushed to Github but to set up directly in the production environment.
+
+
+I personally am not familiar with it so for more details please watch Dan Vega's video, scroll down and you will see it.
+
+```java
+# .properties
+secret.api-key=optional:secret-key
+
+```
 Including the ConfigurationProperties they should all work.
 
+### Video Tutorial by Dan Vega
+
+Lastly I would like to share Dan's video on how to set up secret environment variable, here is his video if you prefer video reference
+[![Dan Vega&#39;s Tutorial](http://img.youtube.com/vi/PmGLn3ua_lU/0.jpg)](https://www.youtube.com/watch?v=PmGLn3ua_lU)
+
+
 If you find it useful send me a message on [X(Twitter) @KoLoyYee](https://twitter.com/KoLoyYee).
+
+
 Thank you and good luck with your development!

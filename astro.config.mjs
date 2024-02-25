@@ -10,7 +10,7 @@ export default defineConfig({
 			applyBaseStyles: false,
 		}),
 	],
-	site: 'https://koloyyee.github.io',
+	// site: 'https://koloyyee.github.io',
 	output: 'static',
 	adapter: vercel(),
 })
