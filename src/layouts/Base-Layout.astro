@@ -8,66 +8,66 @@ const { title } = Astro.props;
 ---
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>The {title} part</title>
-    </head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70W2SSBLME"
-    ></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>The {title} part</title>
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70W2SSBLME"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag(" js", new Date());
-        gtag("config", "G-70W2SSBLME");
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js",
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-M54KB78");
-    </script>
-    <!-- End Google Tag Manager -->
-    <body class="flex flex-col justify-between h-screen">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-M54KB78"
-                height="0"
-                width="0"
-                style="display:none;visibility:hidden"></iframe></noscript
-        >
-        <!-- End Google Tag Manager (noscript) -->
-        <main class="lg:mx-4 sm:mx-2">
-            <Header />
-            <section class="mb-auto flex-grow">
-                <h1 class="title">{title}</h1>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag(" js", new Date());
+    gtag("config", "G-70W2SSBLME");
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-M54KB78");
+  </script>
+  <!-- End Google Tag Manager -->
+  <body class="flex flex-col justify-between h-screen">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M54KB78"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+    <main class="lg:mx-4 sm:mx-2">
+      <Header />
+      <section class="mb-auto flex-grow">
+        <h1 class="title">{title}</h1>
 
-                <slot />
-            </section>
-        </main>
-        <Footer />
-    </body>
+        <slot />
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style>
-    .title {
-        color: var(--accent);
-    }
+  .title {
+    color: var(--accent);
+  }
 </style>
