@@ -1,40 +1,59 @@
 ---
-import PostLink from '../components/Post-Link.astro'
-import BaseLayout from '../layouts/Base-Layout.astro'
+import PostLink from "../components/Post-Link.astro";
+import BaseLayout from "../layouts/Base-Layout.astro";
 
-import '../styles/global.css'
+import "../styles/global.css";
 
-const allPosts = await Astro.glob('../pages/posts/*/*.md')
+const allPosts = await Astro.glob("../pages/posts/*/*.md");
 const sortedPosts = allPosts.sort(
-	(a, b) =>
-		Date.parse(b.frontmatter.publishedAt) -
-		Date.parse(a.frontmatter.publishedAt)
-)
-let years = allPosts.map((post) => post.frontmatter.publishedAt.split('-')[0])
-years = [...new Set(years)]
+  (a, b) =>
+    Date.parse(b.frontmatter.publishedAt) -
+    Date.parse(a.frontmatter.publishedAt)
+);
+let years = allPosts.map((post) => post.frontmatter.publishedAt.split("-")[0]);
+years = [...new Set(years)];
 
-const title = 'blog'
----
+const title = "blog";
+function groupByYear() {
+  const sortedPosts = allPosts.sort(
+    (a, b) =>
+      Date.parse(b.frontmatter.publishedAt) -
+      Date.parse(a.frontmatter.publishedAt)
+  );
 
-<BaseLayout title={title}>
-	{
-		years.map((year) => {
-			return (
-				<>
-					<h3> {year} </h3>
-					<section class="posts-list">
-						{sortedPosts.map((post) => {
-							return (
-								<PostLink
-									url={post.url}
-									title={post.frontmatter.title}
-									description={post.frontmatter.description}
-								/>
-							)
-						})}
-					</section>
-				</>
-			)
-		})
+	return (sortedPosts);
+}
+const postsByYear =  allPosts
+	.sort( (a, b) => Date.parse(b.frontmatter.publishedAt) - Date.parse(a.frontmatter.publishedAt))
+	.reduce((acc , curr) => {
+	const year = curr.frontmatter.publishedAt.split("-")[0];
+	if(!acc[year]) {
+		acc[year] = [];
 	}
+	acc[year].push(curr);
+	return acc;
+}, {})
+
+---
+<BaseLayout title={title}>
+  {
+    years.map((year) => {
+      return (
+        <>
+          <h3> {year} </h3>
+          <section class="posts-list">
+            {postsByYear[year].map((post) => {
+              return (
+                <PostLink
+                  url={post.url}
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                />
+              );
+            })}
+          </section>
+        </>
+      );
+    })
+  }
 </BaseLayout>

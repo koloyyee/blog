@@ -59,3 +59,7 @@ If the stack is empty in the first loop it will be false, if not we can start pu
 Why Stack? Because of LIFO(last in first out), if we store the right-hand side of the () / {} / [] when we pop it, the sequence will be the same as we are pushing it in, if they are not the same we know it will be false. It is a very good challenge, I admit I did need to get some hints, but I will give it a try again in 2 weeks.
 
 Stack, Queue, Singly and Doubly Linked List, Deque, Resizable Array Stack/Queue, Circular Array, these guys opened my eyes, can’t wait to do the second part of Week 2 
+
+
+## Algorithm
+###
