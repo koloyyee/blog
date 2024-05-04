@@ -13,6 +13,10 @@ yarn-error.log*
 pnpm-debug.log*
 
 
+# omitted blog post
+env_var.md
+
+
 # environment variables
 .env
 .env.production
