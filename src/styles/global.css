@@ -51,6 +51,13 @@ html {
 h1 {
     color: var(--primary);
     font-size: 3rem;
+    line-height: 1.8;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding-top: 2rem;
 }
 
 html.dark {
@@ -88,6 +95,9 @@ nav {
     width: 100%;
     transition: all ease-in-out 300ms;
 
+}
+p {
+  line-height: 2.5;
 }
 
 
